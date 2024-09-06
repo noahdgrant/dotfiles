@@ -1,0 +1,11 @@
+[user]
+	name = Noah Grant
+	email = noahdgrant@gmail.com
+[credential]
+	helper = cache
+[init]
+	defaultBranch = main
+[core]
+	editor = nvim
+[safe]
+	directory = /var/www/html
