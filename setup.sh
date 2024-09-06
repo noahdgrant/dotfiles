@@ -1,5 +1,3 @@
-#!/bin/bash
-
 # Setup script for my Ubuntu configuration
 
 echo "Updating system"
@@ -10,7 +8,10 @@ mkdir -p ~/.config
 
 echo "Installing packages"
 sudo apt install -y build-essential valgrind tmux xclip ripgrep python3.10-venv zip unzip python3 curl bear tree python-is-python3 universal-ctags cscope vim
-sudo snap install nvim --classic
+
+echo "Installing Neovim"
+chmod +x ./update_neovim.sh
+./update_neovim.sh
 
 # Node and NPM
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
