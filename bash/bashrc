@@ -122,9 +122,11 @@ parse_git_branch() {
 }
 export PS1="\u@\h \[\e[32m\]\w \[\e[36m\]\$(parse_git_branch)\[\e[00m\]$ "
 
-. "$HOME/.cargo/env"
+# default editor
+EDITOR=/usr/local/bin/nvim
 
-export PATH="$PATH:/opt/nvim-linux64/bin"
+# Add Rust Cargo to path
+. "$HOME/.cargo/env"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
