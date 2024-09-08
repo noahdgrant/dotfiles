@@ -116,6 +116,11 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# Test if ~/.aliases exists and source it
+if [ -f ~/.aliases ]; then
+    source ~/.aliases
+fi
+
 # show git branch
 parse_git_branch() {
      git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
@@ -123,7 +128,11 @@ parse_git_branch() {
 export PS1="\u@\h \[\e[32m\]\w \[\e[36m\]\$(parse_git_branch)\[\e[00m\]$ "
 
 # default editor
-EDITOR=/usr/local/bin/nvim
+export EDITOR=/usr/local/bin/nvim
+
+# vim mode
+# set -o vi
+set -o emacs
 
 # Add Rust Cargo to path
 . "$HOME/.cargo/env"

@@ -1,0 +1,13 @@
+[core]
+	editor = nvim
+[credential]
+    helper = cache
+[include]
+    path = ~/.gitconfig_local
+[init]
+	defaultBranch = main
+[safe]
+	directory = /var/www/html
+[user]
+	name = Noah Grant
+	email = noahdgrant@gmail.com

@@ -1,31 +1,52 @@
-# Ubuntu Configuration Setup
+# My dotfiles
 
-## Prerequisites
-1. Install git
+This directory contains the dotfiles for my system
+
+## Requirements
+
+Ensure you have the following installed on your system
+
+### Git
 
 ```bash
 $ sudo apt install git
 ```
 
-## Setup
-1. Clone repo via HTTPS
+## Installation
+
+First, check out the dotfiles repo in your `$HOME` directory using git
 
 ```bash
 $ git clone https://github.com/noahdgrant/dotfiles.git ~/.dotfiles
+$ cd ~/.dotfiles
 ```
 
-2. Run setup.sh
+Next, run the setup script to install other useful tools
 
 ```bash
-$ cd ~/.dotfiles
+$ cd scripts/
 $ chmod +x setup.sh
-$ setup.sh
+$ ./setup.sh
 ```
 
-3. Restart terminal
-4. Download and install the JetBrains Mono Nerd Font
-    - https://www.nerdfonts.com/
-    - Right click and click "Install" to install the font on the system
-5. Start tmux and press "C-a + I" to install packages
-6. Start Neovim and wait for everything to install
-7. Restart Neovim
+Then use GNU Stow to create symlinks. Don't link the `scripts` directory
+
+```bash
+$ stow <package>
+```
+
+Restart the terminal for the changes to take affect.
+
+### Font
+
+Download and install the JetBrains Mono Nerd Font
+- https://www.nerdfonts.com/
+- Right click and click "Install" to install the font on the system
+
+### Tmux
+
+Start tmux and press "C-a + I" to install packages
+
+### Neovim
+
+Start Neovim, wait for everything to install, and then restart Neovim
