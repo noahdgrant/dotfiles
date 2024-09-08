@@ -14,7 +14,7 @@ $ sudo apt install git
 
 ## Installation
 
-First, check out the dotfiles repo in your `$HOME` directory using git
+First, check out the dotfiles repo in your `$HOME` directory using Git
 
 ```bash
 $ git clone https://github.com/noahdgrant/dotfiles.git ~/.dotfiles
@@ -29,13 +29,13 @@ $ chmod +x setup.sh
 $ ./setup.sh
 ```
 
-Then use GNU Stow to create symlinks. Don't link the `scripts` directory
+Then use GNU Stow to create symlinks. Don't link the `scripts/` directory
 
 ```bash
 $ stow <package>
 ```
 
-Restart the terminal for the changes to take affect.
+Restart the terminal for the changes to take affect
 
 ### Font
 
@@ -45,7 +45,7 @@ Download and install the JetBrains Mono Nerd Font
 
 ### Tmux
 
-Start tmux and press "C-a + I" to install packages
+Start tmux and press `C-a + I` to install packages
 
 ### Neovim
 
