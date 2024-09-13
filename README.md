@@ -41,8 +41,7 @@ Restart the terminal for the changes to take affect
 ### Font
 
 Download and install the JetBrains Mono Nerd Font
-- https://www.nerdfonts.com/
-- Right click and click "Install" to install the font on the system
+- https://www.jetbrains.com/lp/mono/#how-to-install
 
 ### Tmux
 
