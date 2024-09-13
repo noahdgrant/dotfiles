@@ -7,9 +7,9 @@ sudo apt upgrade
 mkdir -p ~/.config
 
 echo "Installing packages"
-sudo apt install -y build-essential valgrind tmux xclip ripgrep \
-    python3.10-venv zip unzip python3 curl bear tree python-is-python3 \
-    universal-ctags cscope vim stow
+sudo apt install -y build-essential tmux vim stow xclip curl zip unzip \
+    tree python3 python-is-python3 python3.10-venv \
+    universal-ctags cscope i3 kitty
 
 echo "Installing Neovim"
 chmod +x ./update_neovim.sh

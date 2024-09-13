@@ -32,6 +32,7 @@ $ ./setup.sh
 Then use GNU Stow to create symlinks. Don't link the `scripts/` directory
 
 ```bash
+$ cd ~/.dotfiles/
 $ stow <package>
 ```
 
