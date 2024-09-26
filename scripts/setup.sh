@@ -9,7 +9,7 @@ mkdir -p ~/.config
 echo "Installing packages"
 sudo apt install -y build-essential tmux vim stow xclip curl zip unzip \
     tree python3 python-is-python3 python3.10-venv \
-    universal-ctags cscope i3 kitty
+    universal-ctags cscope i3 i3blocks kitty gcc g++ lua5.4 luarocks ripgrep
 
 echo "Installing Neovim"
 chmod +x ./update_neovim.sh
