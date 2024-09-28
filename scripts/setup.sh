@@ -28,5 +28,9 @@ echo "Updating newly installed packages"
 sudo apt update
 sudo apt upgrade
 
+echo "Linking custom tools"
+sudo ln -s ~/.dotfiles/tools/venv /usr/local/bin/venv
+sudo ln -s ~/.dotfiles/tools/dev-env /usr/local/bin/dev-env
+
 echo "Setup complete!"
 echo "Restart terminal for changes to take effect"
