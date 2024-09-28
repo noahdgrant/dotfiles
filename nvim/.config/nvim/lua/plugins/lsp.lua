@@ -19,7 +19,7 @@ return {
 				"jdtls",
 				"lua_ls",
 				"marksman",
-				"pylsp",
+				--"pylsp", version 1.12.0 breaks config
 				"rust_analyzer",
 			},
 			auto_install = true,
@@ -96,6 +96,24 @@ return {
 							enabled = false,
 						},
 						yapf = {
+							enabled = false,
+						},
+						rope_rename = {
+							enabled = false,
+						},
+						flake8 = {
+							enabled = false,
+						},
+						mccabe = {
+							enabled = false,
+						},
+						pycodestyle = {
+							enabled = false,
+						},
+						pyflakes = {
+							enabled = false,
+						},
+						pylint = {
 							enabled = false,
 						},
 					},
