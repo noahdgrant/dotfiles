@@ -4,19 +4,19 @@
     magic = log --all --graph --decorate --oneline
     ncommits = rev-list --count HEAD # ^<branch name>
 [core]
-	editor = nvim
+    editor = nvim
 [credential]
     helper = cache
 [include]
     path = ~/.gitconfig_local
 [init]
-	defaultBranch = main
+    defaultBranch = main
 [safe]
-	directory = /var/www/html
+    directory = /var/www/html
 [user]
-	name = Noah Grant
-	email = noahdgrant@gmail.com
+    name = Noah Grant
+    email = noahdgrant@gmail.com
 [pull]
-	rebase = true
+    rebase = true
 [rerere]
-	enabled = true
+    enabled = true
