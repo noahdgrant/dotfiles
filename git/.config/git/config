@@ -16,3 +16,7 @@
 [user]
 	name = Noah Grant
 	email = noahdgrant@gmail.com
+[pull]
+	rebase = true
+[rerere]
+	enabled = true
