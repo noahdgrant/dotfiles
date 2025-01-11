@@ -50,3 +50,5 @@ vim.keymap.set("n", "<leader>ot", function()
     vim.cmd.wincmd("J")
     vim.api.nvim_win_set_height(0, 8)
 end, { desc = "[o]pen [t]erminal" })
+-- return to normal mode when in terminal
+vim.keymap.set("t", "<esc><esc>", "<c-\\><c-n>")

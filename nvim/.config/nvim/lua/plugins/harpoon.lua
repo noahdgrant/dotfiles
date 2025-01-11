@@ -28,6 +28,7 @@ return {
         vim.keymap.set("n", "<leader>h", function()
             harpoon:list(git_branch()):add()
         end, { desc = "[h]arpoon file" })
+
         vim.keymap.set("n", "<M-h>", function()
             harpoon.ui:toggle_quick_menu(harpoon:list(git_branch()))
         end, { desc = "show harpooned files" })
@@ -35,14 +36,37 @@ return {
         vim.keymap.set("n", "<C-u>", function()
             harpoon:list(git_branch()):select(1)
         end, { desc = "harpoon 1" })
+
+        vim.keymap.set("n", "<C-U>", function()
+            vim.cmd.vsp()
+            harpoon:list(git_branch()):select(1)
+        end, { desc = "harpoon 1 in new split" })
+
         vim.keymap.set("n", "<C-i>", function()
             harpoon:list(git_branch()):select(2)
         end, { desc = "harpoon 2" })
+
+        vim.keymap.set("n", "<C-I>", function()
+            vim.cmd.vsp()
+            harpoon:list(git_branch()):select(2)
+        end, { desc = "harpoon 2 in new split" })
+
         vim.keymap.set("n", "<C-o>", function()
             harpoon:list(git_branch()):select(3)
         end, { desc = "harpoon 3" })
+
+        vim.keymap.set("n", "<C-O>", function()
+            vim.cmd.vsp()
+            harpoon:list(git_branch()):select(3)
+        end, { desc = "harpoon 3 in new split" })
+
         vim.keymap.set("n", "<C-p>", function()
             harpoon:list(git_branch()):select(4)
         end, { desc = "harpoon 4" })
+
+        vim.keymap.set("n", "<C-p>", function()
+            vim.cmd.vsp()
+            harpoon:list(git_branch()):select(4)
+        end, { desc = "harpoon 4 in new split" })
     end,
 }
